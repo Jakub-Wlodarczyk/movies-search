@@ -4,6 +4,7 @@ import {
 	getConfiguration
 } from '../../app/resources';
 import movieDbLogo from '../../assets/movie_db_logo.png';
+import MoviesList from '../MoviesList';
 
 /**
  * The function provides a movie search functionality
@@ -87,8 +88,13 @@ class MoviesSearch extends React.Component {
 					<input type="submit" value="Search"/>
 				</form>
 				}
+
 				{this.state.searchInfo.length > 0 &&
 				<p className="movies-search__search-info">{this.state.searchInfo}</p>
+				}
+
+				{this.state.movies.length > 0 &&
+					<MoviesList movies={this.state.movies} baseUrl={this.state.APIImageBaseUrl} />
 				}
 			</div>
 		);

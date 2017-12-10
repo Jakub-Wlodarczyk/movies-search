@@ -1,0 +1,22 @@
+.movies-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .movies-list__single-movie {
+    width: 32%;
+    margin-right: 1%;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+
+  .movies-list__single-movie:nth-child(3n) {
+    margin-right: 0;
+  }
+}

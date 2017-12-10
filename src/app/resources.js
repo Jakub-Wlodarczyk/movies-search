@@ -33,3 +33,20 @@ export const getConfiguration = () => {
 		.then(json => json)
 		.catch(error => error);
 };
+
+/**
+ * The function fetches a single movie by its id
+ * @param {Number} id
+ * @returns {Promise}
+ */
+export const getMovieDetails = (id) => {
+	return fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`).then((response) => {
+		const contentType = response.headers.get('content-type');
+		if (contentType && contentType.includes('application/json')) {
+			return response.json();
+		}
+		throw new TypeError('Not a JSON');
+	})
+		.then(json => json)
+		.catch(error => error);
+};
