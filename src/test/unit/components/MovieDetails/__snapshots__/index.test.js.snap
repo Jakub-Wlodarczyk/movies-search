@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetails should render the MovieDetails view 1`] = `
+<div
+  className="movie-details"
+>
+  <div
+    className="movie-details__movie"
+  >
+    <div
+      className="movie-details__new-search"
+    >
+      <a
+        href="/"
+      >
+        SEARCH AGAIN
+      </a>
+    </div>
+    <h1>
+      some title
+    </h1>
+    <p>
+      <b>
+        BUDGET: 
+      </b>
+      100
+       $
+    </p>
+    <p>
+      <b>
+        REVENUE: 
+      </b>
+      200
+       $
+    </p>
+    <p>
+      <b>
+        RELEASE DATE: 
+      </b>
+      10-03-2005
+    </p>
+    <p>
+      <b>
+        RUNTIME: 
+      </b>
+      150
+       min
+    </p>
+    <img
+      name="some title-image"
+      src="/some-base-urloriginal//some-path"
+    />
+    <p>
+      some longer description
+    </p>
+  </div>
+</div>
+`;
