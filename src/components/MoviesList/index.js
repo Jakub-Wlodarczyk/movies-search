@@ -1,6 +1,7 @@
 import React from 'react';
 import noImage from '../../assets/sample_poster.jpg';
 import { getMovieDetails } from '../../app/resources';
+import MovieDetails from '../MovieDetails';
 
 /**
  * The function displays fetched results as a grid
@@ -52,6 +53,7 @@ class MoviesList extends React.Component {
 					))}
 				</div>
 				}
+				{this.state.showMovieDetails && <MovieDetails baseUrl={baseUrl} details={this.state.movieDetails} />}
 			</div>
 		);
 	}
