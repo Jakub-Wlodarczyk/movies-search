@@ -1,0 +1,9 @@
+{
+  "moduleNameMapper": {
+    "\\.(png|gif|jpg)$": "<rootDir>/jest/webpackAssetMock.js",
+    "\\.(css|scss)$": "<rootDir>/jest/stylesMock.js"
+  },
+  "roots": [
+    "<rootDir>/src/test/unit"
+  ]
+}

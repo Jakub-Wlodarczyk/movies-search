@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviesSearch should render the MoviesSearch view 1`] = `
+<div
+  className="movies-search"
+>
+  <div
+    className="movies-search__movie-db-logo"
+  >
+    <img
+      name="movie-db-logo-image"
+      src=""
+    />
+  </div>
+  <form
+    name="movies-search-form"
+    onSubmit={[Function]}
+  >
+    <label>
+      Search for a movie:
+      <input
+        name="searchPhrase"
+        onChange={[Function]}
+        placeholder="example movie: Shrek"
+        type="text"
+        value=""
+      />
+    </label>
+    <input
+      type="submit"
+      value="Search"
+    />
+  </form>
+</div>
+`;
