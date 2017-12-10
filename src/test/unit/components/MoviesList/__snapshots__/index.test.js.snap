@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviesList should render the MoviesList view 1`] = `
+<div>
+  <div
+    className="movies-list"
+  >
+    <div
+      className="movies-list__single-movie"
+    >
+      <p>
+        TITLE: 
+        title 1
+      </p>
+      <p>
+        RELEASE DATE: 
+        01-01-2000
+      </p>
+      <img
+        name="title 1-image"
+        onClick={[Function]}
+        src="/some-base-urlw500//path1"
+      />
+    </div>
+    <div
+      className="movies-list__single-movie"
+    >
+      <p>
+        TITLE: 
+        title 2
+      </p>
+      <p>
+        RELEASE DATE: 
+        02-02-2000
+      </p>
+      <img
+        name="title 2-image"
+        onClick={[Function]}
+        src="/some-base-urlw500//path2"
+      />
+    </div>
+  </div>
+</div>
+`;
